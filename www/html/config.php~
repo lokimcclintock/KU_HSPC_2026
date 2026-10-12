@@ -1,0 +1,10 @@
+<?php
+// Basic connection settings
+$databaseHost = 'localhost';
+$databaseUsername = 'root';
+$databasePassword = 'N/A';
+$databaseName = 'ku_hspc_2026';
+
+// Connect to the database
+$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
+?>

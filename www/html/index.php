@@ -15,26 +15,9 @@
     			</table>
     		</header>
 		<?php 
-		$host = '127.0.0.1';
-		$db = 'products'; 
-		$user = 'root';
-		$pass = '';
-		$charset = 'utf8mb4';			
-		$dsn = "mariadb:host=$host;dbname=$db;charset=$charset";
-		$options = [
-		    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION, // Throw exceptions on error
-		    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,       // Fetch results as associative array
-		    PDO::ATTR_EMULATE_PREPARES   => false,                  // Use real prepared statements
-		];
+		include_once("config.php");
 
-		try {
-		    $pdo = new PDO($dsn, $user, $pass, $options);
-		    echo "<h2>Database connection established successfully!</h2>";
-		} catch (\PDOException $e) {
-		    die("Database connection failed: " . $e->getMessage());
-		}
-
-		echo "<hr>";   	 
+		echo mysqli_query($mysqli, "DESCRIBE products;");
 		?>	
 	</body>
 </html>
