@@ -9,7 +9,7 @@
     			<table>
     			<tr>
     				<td><h1><span style="color:aliceblue;">G</span>unter's <span style="color:maroon;">S</span>mithy</h1></td>
-    				<td><input placeholder="search"/></td>
+    				<td><input placeholder="search" name="search"/></td>
     				<td><button>Place Order</button></td>
     			</tr>
     			</table>
