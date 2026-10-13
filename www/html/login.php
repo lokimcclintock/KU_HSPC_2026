@@ -11,8 +11,8 @@
 	   ?>
 	  <h1>Log In</h1>
 	  <form action="auth.php" method="post">
-	  username: <input type="text" name="username"><br>
-	  password: <input type="password" name="password"><br>
+	  username: <input type="text" name="username" required><br>
+	  password: <input type="password" name="password" required><br>
 	  <input type="submit">
 	  </form>
 		<?php
