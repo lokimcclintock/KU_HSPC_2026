@@ -1,3 +1,4 @@
+<body style="margin:0;">
 <?php
 include_once('config.php');
 include_once('header.php');
@@ -14,8 +15,11 @@ if($expected_hash_arr === null) {
 }
 
 if($inputted_hash == $expected_hash) {
-  echo "Accepted. <a href='./'>Continue.</a>";
+  $_SESSION["username"] = $_POST["username"];
+  header('Location: ./');
+  die();
 } else {
-  echo "Incorrect Login Info. <a href='./login.php'>Go Back.</a>";
+  sleep(3);
+  echo "Incorrect login info! <a href='./login.php'>Try again.</a>";
 }
 ?>
