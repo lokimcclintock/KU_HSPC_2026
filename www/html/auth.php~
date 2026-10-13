@@ -1,0 +1,7 @@
+<?php
+include_once('config.php')
+include_once('serve.php')
+
+phash = hash('sha512', $_POST['password'];
+
+?>
