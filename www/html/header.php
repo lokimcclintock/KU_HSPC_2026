@@ -8,13 +8,16 @@ include_once("serve.php")
 		<td style="position: absolute;right: 0;"><?php
 		$login_button = '<a href="./login.php"><button>Log In</button></a>';
 		$view_orders_button = '<a href="./orders.php"><button>View Placed Order(s)</button></a>';
-		$admin_panel_button = '<a href="./admin_panel.php><button>Admin Panel</button></a>';
+		$admin_panel_button = '<a href="./admin_panel.php"><button>Admin Panel</button></a>';
 		$logout_button = '<a href="./logout.php"><button>Log Out</button></a>';
 		$register_button = '<a href="./register.php"><button>Register</button</a>';
 
 		if($_SESSION["logged_in"]) {
 			 echo "<span style='color: white;'>Hello, " . $_SESSION["username"] . "!</span>";
 			 echo $view_orders_button;
+			 if($_SESSION['is_admin']) {
+			 	echo $admin_panel_button;
+			 }
 			 echo $logout_button;
 			 
 		} else {
