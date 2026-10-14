@@ -11,6 +11,7 @@ include_once("serve.php")
 		$admin_panel_button = '<a href="./admin_panel.php"><button>Admin Panel</button></a>';
 		$logout_button = '<a href="./logout.php"><button>Log Out</button></a>';
 		$register_button = '<a href="./register.php"><button>Register</button</a>';
+		$settings_button = '<a href="./settings.php"><button>Settings</button></a>';
 
 		if($_SESSION["logged_in"]) {
 			 echo "<span style='color: white;'>Hello, " . $_SESSION["username"] . "!</span>";
