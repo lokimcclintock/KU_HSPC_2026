@@ -1,8 +1,12 @@
+<!-- orders.php
+  -- Shows user where their order lies on Gunter\'s waitlist.
+  -->
+
 <body>
 <?php
 include_once("header.php");
 if($_SESSION["logged_in"]):
-$waitlist_query = mysqli_query($mysqli, "select waitlist.product_id, row_number() over (order by waitlist.id asc) as row_num from waitlist join users on waitlist.user_id=users.id where username=\"". $_SESSION["username"]."\"");
+$waitlist_query = mysqli_query($mysqli, "with wlt as (select waitlist.product_id, users.username, row_number() over (order by waitlist.id asc) as row_num from waitlist join users on waitlist.user_id=users.id) select product_id, row_num from wlt where username=\"". $_SESSION["username"]."\"");
 $waitlist_arr = $waitlist_query->fetch_all();
 ?>
 <p>

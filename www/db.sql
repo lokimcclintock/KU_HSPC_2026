@@ -97,7 +97,7 @@ CREATE TABLE `waitlist` (
   `user_id` int(11) NOT NULL,
   `priority` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -107,6 +107,15 @@ CREATE TABLE `waitlist` (
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `waitlist` WRITE;
 /*!40000 ALTER TABLE `waitlist` DISABLE KEYS */;
+INSERT INTO `waitlist` VALUES
+(2,4,1,0),
+(3,3,1,0),
+(4,3,1,0),
+(5,2,1,0),
+(6,1,1,0),
+(7,1,1,0),
+(8,4,7,0),
+(9,2,1,0);
 /*!40000 ALTER TABLE `waitlist` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -121,4 +130,4 @@ SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-10-20 21:04:15
+-- Dump completed on 2026-10-21 10:39:18

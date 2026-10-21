@@ -6,6 +6,7 @@
 include_once("serve.php")
 ?>
 
+<title>Gunter's Smithy</title>
 <link rel="stylesheet" href="style.css">
 
 <header style="background-color: gray;">
@@ -20,10 +21,12 @@ include_once("serve.php")
 		$logout_button = '<a href="./logout.php"><button>Log Out</button></a>';
 		$register_button = '<a href="./register.php"><button>Register</button</a>';
 		$settings_button = '<a href="./settings.php"><button>Settings</button></a>';
+        $mine_button = '<a href="./mine.php"><button>Mine!</button></a>';
 		// Outputs different buttons based on whether user is logged in.
 		if($_SESSION["logged_in"]) {
 			 echo "<span style='color: white;'>Hello, " . $_SESSION["username"] . "!</span>";
-             echo $view_orders_button;
+            echo $mine_button;
+            echo $view_orders_button;
 			 echo $logout_button;
 
 		} else {
