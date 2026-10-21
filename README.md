@@ -13,3 +13,4 @@ php-db
 php-mysql``
 
 Run `install.sh` as root.
+Change `$databasePassword` variable in `www/html/config.php`
