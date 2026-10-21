@@ -1,6 +1,9 @@
 <?php
 include_once("serve.php")
 ?>
+
+<link rel="stylesheet" href="style.css">
+
 <header style="background-color: gray;">
     	<table>
 	<tr style="height: 4em;">
@@ -15,10 +18,6 @@ include_once("serve.php")
 
 		if($_SESSION["logged_in"]) {
 			 echo "<span style='color: white;'>Hello, " . $_SESSION["username"] . "!</span>";
-			 echo $view_orders_button;
-			 if($_SESSION['is_admin']) {
-			 	echo $admin_panel_button;
-			 }
 			 echo $logout_button;
 			 
 		} else {
