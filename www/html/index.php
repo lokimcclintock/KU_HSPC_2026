@@ -1,3 +1,7 @@
+<!-- index.php
+  -- Main storefront. Landing page.
+  -->
+
 <!DOCTYPE html>
 
 <html>

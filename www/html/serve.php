@@ -1,3 +1,7 @@
+<!-- serve.php
+  -- Included in header.php. Sets session variables.
+  -->
+
 <?php
 include_once('config.php');
 session_start();

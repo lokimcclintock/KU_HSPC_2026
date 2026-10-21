@@ -1,3 +1,7 @@
+<!-- buy.php
+  -- Lets user know their order has been processed.
+  -->
+
 <body style="margin:0;">
 <?php
 include_once("header.php");

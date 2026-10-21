@@ -1,3 +1,7 @@
+<!-- register.php
+  -- Provides a frontend to the account registration process.
+  -->
+
 <!DOCTYPE html>
 
 <html>

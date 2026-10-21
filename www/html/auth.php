@@ -1,3 +1,7 @@
+<!-- auth.php
+  -- Logs user in. Checks if password is accurate.
+  -->
+
 <body style="margin:0;">
 <?php
 include_once('config.php');

@@ -1,3 +1,7 @@
+<!-- register_auth.php
+  -- Creates accounts and ensures usernames arent taken.
+  -->
+
 <body style="margin:0;">
 <?php
 include_once('config.php');

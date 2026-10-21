@@ -1,3 +1,7 @@
+<!-- logout.php
+  -- Logs user out
+  -->
+
 <?php
 include_once("serve.php");
 

@@ -1,8 +1,12 @@
+<!-- config.php
+  -- Provides connection to MariaDB/MySQL database.
+  -->
+
 <?php
 // Basic connection settings
 $databaseHost = 'localhost';
 $databaseUsername = 'db';
-$databasePassword = 'OXOqUfKxjWDKv9zw73'; // throwaway pass
+$databasePassword = 'OXOqUfKxjWDKv9zw73'; // Change me!
 $databaseName = 'ku_hspc_2026';
 
 // Connect to the database

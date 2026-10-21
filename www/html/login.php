@@ -1,3 +1,7 @@
+<!-- login.php
+  -- Provides a frontend for the login system.
+  -->
+
 <!DOCTYPE html>
 
 <html>
